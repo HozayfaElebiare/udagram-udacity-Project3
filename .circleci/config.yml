@@ -39,3 +39,12 @@ jobs:
           name: Front-End Deploy App
           command: |
             npm run frontend:deploy
+            workflows:
+
+workflows:
+  main:
+    jobs:
+      -build:
+       filters:
+        branches:
+          only: master
