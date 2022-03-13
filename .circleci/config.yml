@@ -1,3 +1,11 @@
+workflows:
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+              
 version: 2.1
 orbs:
   
@@ -40,10 +48,10 @@ jobs:
           command: |
             npm run frontend:deploy
             workflows:
-workflows:
-  build-deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only: master
+# workflows:
+#   build-deploy:
+#     jobs:
+#       - build:
+#           filters:
+#             branches:
+#               only: master
