@@ -41,10 +41,12 @@ jobs:
             npm run frontend:deploy
             workflows:
 
+
 workflows:
-  main:
+  build-deploy:
     jobs:
-      -build:
-       filters:
-        branches:
-          only: master
+      - js_build
+      - build_server_pdfs: # << the job to conditionally run based on the filter-by-branch-name.
+          filters:
+            branches:
+              only: master
