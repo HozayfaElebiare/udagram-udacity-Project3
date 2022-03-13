@@ -24,7 +24,7 @@ Use the following link:  [http://s3.udacity.class1.s3-website-us-east-1.amazonaw
 
 This website is hosted on AWS. Elastic Beanstalk is used for the Backend API,  S3 Buckets for the frontend , and a RDS database running Postgres.
 
-![Image](docs/images/System-Architecture.png)
+![Image](docs/screenshots/System-Architecture.png)
 #### [For more details >> ](docs/Infrastructure.md)
 
 
@@ -34,7 +34,7 @@ This website is hosted on AWS. Elastic Beanstalk is used for the Backend API,  S
 
  The CircleCi is connected to the project on Github and is used to automatically deploy this [Repo](https://github.com/HozayfaElebiare/udagram-udacity-Project3)  to the AWS, and it is set to automatically execute when code is pushed into the master Github project. 
 
-![Image](docs/images/Pipeline-Architecture-Design.jpg)
+![Image](docs/screenshots/Pipeline-Architecture-Design.jpg)
 
 #### [For more details >> ](docs/Pipeline.md)
 
