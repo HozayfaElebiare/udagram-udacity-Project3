@@ -40,11 +40,10 @@ jobs:
           command: |
             npm run frontend:deploy
             workflows:
-
 workflows:
-  main:
+  build-deploy:
     jobs:
-      -build:
-       filters:
-        branches:
-          only: master
+      - build:
+          filters:
+            branches:
+              only: master
